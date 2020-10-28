@@ -59,6 +59,7 @@ captures/
 .externalNativeBuild
 .cxx
 local.properties
+github.properties
 
 # Android Studio 3 in .gitignore file.
 .idea/caches
