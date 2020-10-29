@@ -2,7 +2,9 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
+    id 'com.github.dcendents.android-maven'
 }
+group='com.github.RomainG06'
 
 android {
     compileSdkVersion 30
