@@ -47,7 +47,7 @@ def getVersionName = { ->
 }
 
 def getArtificatId = { ->
-    return "myLibrary" // Replace with library name ID
+    return "mylibrary" // Replace with library name ID
 }
 
 publishing {
@@ -56,7 +56,7 @@ publishing {
             groupId 'org.nicecotedazur.mylibrary' // Replace with group ID
             artifactId getArtificatId()
             version getVersionName()
-            artifact("$buildDir/outputs/aar/${getArtificatId()}-debug.aar")
+            artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
         }
     }
 
@@ -67,7 +67,7 @@ publishing {
              ** Replace GITHUB_USERID with your/organisation Github userID
              ** and REPOSITORY with the repository name on GitHub
              */
-            url = uri("https://maven.pkg.github.com/50823959/ImplementLib")
+            url = uri("https://maven.pkg.github.com/RomainG06/ImplementLib")
             credentials {
                 /** Create github.properties in root project folder file with
                  ** gpr.usr=GITHUB_USER_ID & gpr.key=PERSONAL_ACCESS_TOKEN
